@@ -145,7 +145,7 @@ funky_heatmap <- function(
   scale_column = TRUE,
   add_abc = TRUE,
   removed_entries = NULL,
-  positioning_options = positioning_options(row_height = 1,
+  positioning_options = positioning_options(row_height = 0.5,
   row_space = .1,
   row_bigspace = .5,
   col_width = 1,
