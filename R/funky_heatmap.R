@@ -136,7 +136,7 @@ funky_heatmap <- function(
 #  col_annot_angle = 30,
 #  removed_entries = NULL,
 #  expand = c(xmin = 0, xmax = 2, ymin = 0, ymax = 0)
-  data,
+#  data,
   column_info = NULL,
   row_info = NULL,
   column_groups = NULL,
