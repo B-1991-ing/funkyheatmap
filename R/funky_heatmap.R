@@ -125,29 +125,29 @@
 #' funky_heatmap(data)
 
 positioning_options <- function(
-  row_height = .4,
+  row_height = 1,
   row_space = .1,
   row_bigspace = .5,
   col_width = 1,
   col_space = .1,
   col_bigspace = .5,
-  col_annot_offset = 1.5,
-  col_annot_angle = 25,
+  col_annot_offset = 3,
+  col_annot_angle = 30,
   expand_xmin = 0,
-  expand_xmax = 0,
+  expand_xmax = 2,
   expand_ymin = 0,
   expand_ymax = 0
 ) { 
-  row_height = .4,
+  row_height = 1,
   row_space = .1,
   row_bigspace = .5,
   col_width = 1,
   col_space = .1,
   col_bigspace = .5,
-  col_annot_offset = 1.5,
-  col_annot_angle = 25,
+  col_annot_offset = 3,
+  col_annot_angle = 30,
   expand_xmin = 0,
-  expand_xmax = 0,
+  expand_xmax = 2,
   expand_ymin = 0,
   expand_ymax = 0
 }
