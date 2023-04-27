@@ -123,8 +123,36 @@
 #' data <- rownames_to_column(mtcars, "id")
 #'
 #' funky_heatmap(data)
+
+positioning_options <- function(
+  row_height = 1,
+  row_space = .1,
+  row_bigspace = .5,
+  col_width = 1,
+  col_space = .1,
+  col_bigspace = .5,
+  col_annot_offset = 1.5,
+  col_annot_angle = 25,
+  expand_xmin = 0,
+  expand_xmax = 0,
+  expand_ymin = 0,
+  expand_ymax = 0
+) { ... }
+
 funky_heatmap <- function(
   data,
+  # column_info = NULL,
+  # row_info = NULL,
+  # column_groups = NULL,
+  # row_groups = NULL,
+  # palettes = NULL,
+  # scale_column = TRUE,
+  # add_abc = TRUE,
+  # col_annot_offset = 3,
+  # col_annot_angle = 30,
+  # removed_entries = NULL,
+  # expand = c(xmin = 0, xmax = 2, ymin = 0, ymax = 0)
+  
   column_info = NULL,
   row_info = NULL,
   column_groups = NULL,
@@ -132,10 +160,9 @@ funky_heatmap <- function(
   palettes = NULL,
   scale_column = TRUE,
   add_abc = TRUE,
-  col_annot_offset = 3,
-  col_annot_angle = 30,
   removed_entries = NULL,
-  expand = c(xmin = 0, xmax = 2, ymin = 0, ymax = 0)
+  positioning_options = positioning_options()  
+  
 ) {
   # validate input objects
   data <- verify_data(data)
